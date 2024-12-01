@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Samyojak Vegetarian Board</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <script src="./lib/anime.min.js"></script>
+        <link rel="stylesheet" href="./lib/bootstrap.min.css" >
+        <link rel="stylesheet" href="./lib/wx-bootstrap.css" >
+        <link rel="stylesheet" href="./assets/bce3d09d-a274-4a37-999b-83e80ebbc9d5.css" >
+        <style>
+            html, body { height: 100%; }
+            body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+        </style>
+        <style>
+            @font-face {
+                font-family: BungeeInline-Regular;
+                src: url('./assets/09458726-1145-4934-b9cd-de3f77eb6643.ttf');
+            }
+            
+            @font-face {
+                font-family: Rubik-Medium;
+                src: url('./assets/47e6573e-4f02-429a-848c-f74a8f525783.ttf');
+            }
+            
+            @font-face {
+                font-family: Rubik-Bold;
+                src: url('./assets/48fc8d28-1d6c-42fb-beef-551231a9927f.ttf');
+            }
+            
+            @font-face {
+                font-family: NotoSans-Regular;
+                src: url('./assets/5bf7bf92-c6b9-438f-99c2-0e732cfc5ae5.ttf');
+            }
+            
+            @font-face {
+                font-family: Knewave-Regular;
+                src: url('./assets/b45e7ffd-f424-43ec-a729-d14faeff1de1.ttf');
+            }
+        
+            @font-face {
+                font-family: Rubik-Regular;
+                src: url('./assets/dfe61a62-fb43-4d33-8c46-85f4153a189d.ttf');
+            }
+        </style>
+    </head>
+    <body>
+        <div class="d-flex align-items-center justify-content-center h-100" id="bodyEle">
+
+
+          <div class="row no-gutters wx-demo-bg-img" style="width: 1280px; height: 720px;" id="designEle">
+
+            <video width="1280px" height="720px" autoplay="" muted="" loop preload oncanplay="this.play()" onloadedmetadata="this.muted = true" class="position-absolute" id="video">
+              <source >
+              <!-- <source src="./assets/popcornvideobg.mp4" type="video/mp4"> -->
+              Your browser does not support the video tag.
+            </video>
+
+            <div class="col wx-demo-ml-6 wx-demo-mt-6 mr-3">
+                <div class="wx-demo-h1 bg-white border border-dark wx-demo-border-width pl-2 wx-inline-edit position-relative">VEGETARIAN MENU</div>
+                <div class="row no-gutters mx-1 mt-3">
+                    <div class="col-5 pr-2">
+                        <div class="row no-gutters">
+                            <div class="col wx-demo-bg-green mb-1 text-white pl-1 wx-demo-h5 font-weight-bold wx-inline-edit position-relative">SMALL (7")</div>
+                            <div class="col-3"></div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col wx-demo-bg-green mb-1 text-white pl-1 wx-demo-h5 font-weight-bold wx-inline-edit position-relative">MEDIUM (9")</div>
+                            <div class="col-3"></div>
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="col wx-demo-bg-green text-white pl-1 wx-demo-h5 font-weight-bold wx-inline-edit position-relative">LARGE (12")</div>
+                            <div class="col-3"></div>
+                        </div>
+                    </div>
+                    <div class="col pl-2 border-left border-dark">
+                        <div class="row no-gutters wx-demo-p wx-demo-add-on">
+                            <div class="col"><span class="wx-inline-edit position-relative">gluten-free pita</span></div>
+                            <div class="col-2">+<sup>$</sup><span class="wx-inline-edit position-relative">2</span></div>
+                        </div>
+                        <div class="row no-gutters wx-demo-p wx-demo-add-on">
+                            <div class="col"><span class="wx-inline-edit position-relative">make it a combo</span></div>
+                            <div class="col-2">+<sup>$</sup><span class="wx-inline-edit position-relative">4</span></div>
+                        </div>
+                        <div class="row no-gutters wx-demo-p wx-demo-add-on">
+                            <div class="col"><span class="wx-inline-edit position-relative">double meat</span></div>
+                            <div class="col-2">+<sup>$</sup><span class="wx-inline-edit position-relative">3</span></div>
+                        </div> 
+                        <div class="row no-gutters wx-demo-p wx-demo-add-on">
+                            <div class="col"><span class="wx-inline-edit position-relative">extra cheese/veg</span></div>
+                            <div class="col-2">+<sup>$</sup><span class="wx-inline-edit position-relative">1</span></div>
+                        </div>               
+                    </div>
+                </div>
+        
+                <div class="position-relative mx-1 mt-4">
+                    <img src="./assets/cbb891d3-d85c-4103-b9f3-8220aee7fa3f.png" class="position-absolute wx-demo-healthy-image">
+                    <div class="wx-demo-h4 wx-inline-edit position-relative">FALAFEL PITA</div>
+                    <div class="wx-demo-p mr-2 wx-inline-edit position-relative">A wholesome vegetarian blend of chickpeas, fava beans, lentils, carrots, onions, parsley and Mediterranean herbs &amp; spices – topped with your choice of vegetables, sauce, + cheese</div>
+                    <div class="row wx-demo-p mt-2">
+                        <div class="col-auto"><span class="text-white rounded-circle bg-secondary wx-demo-px-15 mr-1">S</span> <span class="wx-inline-edit position-relative">8.09</span></div>
+                        <div class="col-auto"><span class="text-white rounded-circle bg-dark wx-demo-px-15 mr-1">M</span> <span class="wx-inline-edit position-relative">10.49</span></div>
+                        <div class="col-auto"><span class="text-white rounded-circle wx-demo-bg-green wx-demo-px-15 mr-1">L</span> <span class="wx-inline-edit position-relative">14.09</span></div>
+                    </div>
+                </div>
+        
+                <div class="position-relative mx-1 mt-4">
+                    <img src="./assets/cbb891d3-d85c-4103-b9f3-8220aee7fa3f.png" class="position-absolute wx-demo-healthy-image">
+                    <div class="wx-demo-h4 wx-inline-edit position-relative">HUMMUS PITA</div>
+                    <div class="wx-demo-p mr-2 wx-inline-edit position-relative">Our home-made Arabic dip made with ground chickpeas and blended with our special herbs &amp; spices – topped with your choice of vegetables, sauce, + cheese</div>
+                    <div class="row wx-demo-p mt-2">
+                        <div class="col-auto"><span class="text-white rounded-circle bg-secondary wx-demo-px-15 mr-1">S</span> <span class="wx-inline-edit position-relative">8.09</span></div>
+                        <div class="col-auto"><span class="text-white rounded-circle bg-dark wx-demo-px-15 mr-1">M</span> <span class="wx-inline-edit position-relative">10.29</span></div>
+                        <div class="col-auto"><span class="text-white rounded-circle wx-demo-bg-green wx-demo-px-15 mr-1">L</span> <span class="wx-inline-edit position-relative">14.09</span></div>
+                    </div>
+                </div>
+                <div class="position-relative mx-1 mt-4">
+                    <div class="wx-demo-h4 wx-inline-edit position-relative">3-CHEESE PITA</div>
+                    <div class="wx-demo-p mr-2 wx-inline-edit position-relative">A rich blend of feta, mozza, &amp; cheddar cheese all melted together – topped with your choice of vegetables &amp; sauce</div>
+                    <div class="row wx-demo-p mt-2">
+                        <div class="col-auto"><span class="text-white rounded-circle bg-secondary wx-demo-px-15 mr-1">S</span> <span class="wx-inline-edit position-relative">8.09</span></div>
+                        <div class="col-auto"><span class="text-white rounded-circle bg-dark wx-demo-px-15 mr-1">M</span> <span class="wx-inline-edit position-relative">10.49</span></div>
+                        <div class="col-auto"><span class="text-white rounded-circle wx-demo-bg-green wx-demo-px-15 mr-1">L</span> <span class="wx-inline-edit position-relative">14.09</span></div>
+                    </div>
+                </div>
+                <div class="position-relative mx-1 mt-4">
+                    <img src="./assets/cbb891d3-d85c-4103-b9f3-8220aee7fa3f.png" class="position-absolute wx-demo-healthy-image">
+                    <div class="wx-demo-h4 wx-inline-edit position-relative">BASMATI RICE PITA</div>
+                    <div class="wx-demo-p mr-2 wx-inline-edit position-relative">Warm rice with your choice of vegetables, sauce, + cheese wrapped in a pita</div>
+                    <div class="row wx-demo-p mt-2">
+                        <div class="col-auto"><span class="text-white rounded-circle bg-secondary wx-demo-px-15 mr-1">S</span><span class="wx-inline-edit position-relative">8.09</span></div>
+                        <div class="col-auto"><span class="text-white rounded-circle bg-dark wx-demo-px-15 mr-1">M</span><span class="wx-inline-edit position-relative">10.09</span></div>
+                        <div class="col-auto"><span class="text-white rounded-circle wx-demo-bg-green wx-demo-px-15 mr-1">L</span><span class="wx-inline-edit position-relative">14.09</span></div>
+                    </div>
+                </div>        
+            </div>
+        
+            <div class="col wx-demo-mt-6 mx-3">
+                <div class="wx-demo-h1 bg-white border border-dark wx-demo-border-width pl-2 wx-inline-edit position-relative">SALAD MENU</div>
+                <div class="position-relative mx-1 mt-3">
+                    <img src="./assets/cbb891d3-d85c-4103-b9f3-8220aee7fa3f.png" class="position-absolute wx-demo-healthy-image">
+                    <div class="row no-gutters">
+                        <div class="col wx-demo-h4 wx-inline-edit position-relative">BUILD YOUR OWN SALAD</div>
+                        <div class="col-2 wx-demo-bg-green text-white wx-demo-h5 px-2 pt-1"><sup>$</sup> <span class="text-white wx-inline-edit position-relative">13.19</span></div>
+                    </div>
+                    <div class="wx-demo-p wx-inline-edit position-relative">Your choice of vegetables, sauce, meat &amp; cheese built to satisfy your taste buds</div>
+                </div> 
+                <div class="position-relative mx-1 mt-2">
+                    <img src="./assets/cbb891d3-d85c-4103-b9f3-8220aee7fa3f.png" class="position-absolute wx-demo-healthy-image">
+                    <div class="row no-gutters">
+                        <div class="col wx-demo-h4 wx-inline-edit position-relative">CHICKEN CEASAR SALAD</div>
+                        <div class="col-2 wx-demo-bg-green text-white wx-demo-h5 px-2 pt-1"><sup>$</sup> <span class="text-white wx-inline-edit position-relative">13.09</span></div>
+                    </div>
+                    <div class="wx-demo-p wx-inline-edit position-relative">Chicken, fresh iceberg lettuce, crunchy croutons and our creamy caesar dressing</div>
+                </div>
+                <div class="position-relative mx-1 mt-2">
+                    <img src="./assets/cbb891d3-d85c-4103-b9f3-8220aee7fa3f.png" class="position-absolute wx-demo-healthy-image">
+                    <div class="row no-gutters">
+                        <div class="col wx-demo-h4 wx-inline-edit position-relative">GREEK SALAD</div>
+                        <div class="col-2 wx-demo-bg-green text-white wx-demo-h5 px-2 pt-1"><sup>$</sup> <span class="text-white wx-inline-edit position-relative">11.09</span></div>
+                    </div>
+                    <div class="wx-demo-p wx-inline-edit position-relative">Crisp spinach with cucumbers, onions, tomatoes, green peppers and olives topped with feta cheese and our home-made tzatziki</div>
+                </div>
+                <div class="position-relative mx-1 mt-2">
+                    <img src="./assets/cbb891d3-d85c-4103-b9f3-8220aee7fa3f.png" class="position-absolute wx-demo-healthy-image">
+                    <div class="row no-gutters">
+                        <div class="col wx-demo-h4 wx-inline-edit position-relative">FALAFEL SALAD</div>
+                        <div class="col-2 wx-demo-bg-green text-white wx-demo-h5 px-2 pt-1"><sup>$</sup> <span class="text-white wx-inline-edit position-relative">13.09</span></div>
+                    </div>
+                    <div class="wx-demo-p wx-inline-edit position-relative">Your choice of vegetables, cheese and sauce topped with our Mediterranean style falafel balls</div>
+                </div>
+        
+                <div class="wx-demo-h1 bg-white border border-dark wx-demo-border-width pl-2 mt-3 wx-inline-edit position-relative">KIDS MENU</div>
+                <div class="position-relative mx-1 mt-2">
+                    <div class="row no-gutters">
+                        <div class="col wx-demo-h4 wx-inline-edit position-relative">KIDS BOWL</div>
+                        <div class="col-2 wx-demo-bg-green text-white wx-demo-h5 px-2 pt-1"><sup>$</sup> <span class="text-white wx-inline-edit position-relative">8.19</span></div>
+                    </div>
+                    <div class="wx-demo-p wx-inline-edit position-relative">Kids build your own bowl, rice or potatoes, choice of meat + veg topped with sauce</div>
+                </div> 
+                <div class="position-relative mx-1 mt-2">
+                    <div class="row no-gutters">
+                        <div class="col wx-demo-h4 wx-inline-edit position-relative">PD CHIPS AND DIP</div>
+                        <div class="col-2 wx-demo-bg-green text-white wx-demo-h5 px-2 pt-1"><sup>$</sup> <span class="text-white wx-inline-edit position-relative">4.19</span></div>
+                    </div>
+                    <div class="wx-demo-p wx-inline-edit position-relative">Our pitas crisped and seasoned to perfection served with your choice of dip</div>
+                </div>
+                <div class="position-relative mx-1 mt-2">
+                    <div class="row no-gutters">
+                        <div class="col wx-demo-h4 wx-inline-edit position-relative">CHEESY BREAD BITES</div>
+                        <div class="col-2 wx-demo-bg-green text-white wx-demo-h5 px-2 pt-1"><sup>$</sup> <span class="text-white wx-inline-edit position-relative">5.19</span></div>
+                    </div>
+                    <div class="wx-demo-p wx-inline-edit position-relative">Our famous naan bread warmed and grilled topped with feta, mozza and cheddar cut into bite size pieces served with your choice of dip</div>
+                </div>
+                <div class="position-relative mx-1 mt-2">
+                    <div class="row no-gutters">
+                        <div class="col wx-demo-h4 wx-inline-edit position-relative">HAWAIIAN BREAD BITES</div>
+                        <div class="col-2 wx-demo-bg-green text-white wx-demo-h5 px-2 pt-1"><sup>$</sup> <span class="text-white wx-inline-edit position-relative">6.29</span></div>
+                    </div>
+                    <div class="wx-demo-p wx-inline-edit position-relative">Our Cheesy Bread Bites topped with grilled pineapples and chicken, served with your choice of dipping sauce</div>
+                </div>      
+            </div>
+        
+            <div class="col wx-demo-mt-6 ml-3 wx-demo-mr-6 position-relative">
+                <div class="position-absolute wx-demo-z-index wx-demo-top-3n text-center w-100" id="buttonsContainer"></div><!-- To contain all buttons  -->
+        
+                <div class=" position-absolute wx-neglect-col-spacing wx-margin-into-size wx-demo-bg-dark" id="wxDailyMenu" style="opacity: 1; visibility: initial;">
+                    <div class="wx-demo-mt-6 mx-3 wx-demo-h1 bg-white border border-dark wx-demo-border-width pl-2">DAILY DEAL MENU</div>
+        
+                    <div class="text-center text-amber wx-demo-daily-h2 wx-demo-line-height-xs mt-4">EVERY DAY</div>
+                    <div class="text-center text-amber wx-demo-daily-p wx-demo-line-height-xs">Just got a lot more</div>
+                    <div class="text-center text-amber wx-demo-daily-h2 wx-demo-line-height-xs">DELICIOUS</div>
+        
+                    <div class="mx-3 mt-4">
+                        <div class="row no-gutters">
+                            <div class="col-4 wx-demo-h4 mr-3 text-white wx-demo-line-height-sm">MONDAY</div>
+                            <div class="col bg-amber text-dark wx-demo-h5 pt-1 px-2 wx-demo-line-height-sm font-weight-bold wx-inline-edit position-relative font-italic">FREE EXTRA MEAT DEALL!!!</div>
+                        </div>
+                        <div class="wx-demo-p text-white mt-1 wx-inline-edit position-relative">make it a meal with a fountain drink and get extra meat for free</div>
+        
+                        <div class="row no-gutters mt-4">
+                            <div class="col-4 wx-demo-h4 mr-3 text-white wx-demo-line-height-sm">TUESDAY &amp; SUNDAY</div>
+                            <div class="col bg-amber text-dark wx-demo-h5 pt-2 px-2 wx-demo-line-height-sm font-weight-bold font-italic">
+                                <sup>$</sup><span class="wx-inline-edit position-relative font-italic">5 DOLLAR DONAIR DAY!!!</span> <br>
+                                <sup>$</sup> <span class="wx-inline-edit position-relative font-italic">5 DOLLAR DONAIR DAY!!!</span>
+                            </div>
+                        </div>
+                        <div class="wx-demo-p text-white mt-1">
+                            <span class="wx-demo-p text-white wx-inline-edit position-relative">7" Donairs for </span>
+                            <sup>$</sup><span class="wx-demo-p text-white wx-inline-edit position-relative">5 Dollars all day long!!</span> <br> 
+                            <span class="wx-demo-p text-white wx-inline-edit position-relative">PROTIP: order ahead with the app</span>
+                        </div>
+        
+                        <div class="row no-gutters mt-4">
+                            <div class="col-4 wx-demo-h4 mr-3 text-white wx-demo-line-height-sm">WEDNESDAY</div>
+                            <div class="col bg-amber text-dark wx-demo-h5 pt-1 px-2 wx-demo-line-height-sm font-weight-bold wx-inline-edit position-relative font-italic">EXTRA MEAT FREE!!!</div>
+                        </div>
+                        <div class="wx-demo-p text-white mt-1 wx-inline-edit position-relative">make it a meal with a fountain drink and get extra meat for free</div>
+        
+                        <div class="row no-gutters mt-4">
+                            <div class="col-4 wx-demo-h4 mr-3 text-white wx-demo-line-height-sm">THURSDAY</div>
+                            <div class="col bg-amber text-dark wx-demo-h5 pt-1 px-2 wx-demo-line-height-sm font-weight-bold wx-inline-edit position-relative font-italic">DEAL DOUBLE DOWN!!!</div>
+                        </div>
+                        <div class="wx-demo-p text-white mt-1 wx-inline-edit position-relative">double meat and soft drinks are half price all day long!</div>
+        
+                        <div class="row no-gutters mt-4">
+                            <div class="col-4 wx-demo-h4 mr-3 text-white wx-demo-line-height-sm">FRIDAY</div>
+                            <div class="col bg-amber text-dark wx-demo-h5 pt-1 px-2 wx-demo-line-height-sm font-weight-bold wx-inline-edit position-relative font-italic">CHEESE NAAN FOR CHEAP!!!</div>
+                        </div>
+                        <div class="wx-demo-p text-white mt-1 wx-inline-edit position-relative">add a cheese naan bread to your order for only $2.49</div>
+        
+                        <div class="row no-gutters mt-4">
+                            <div class="col-4 wx-demo-h4 mr-3 text-white wx-demo-line-height-sm">SATURDAY</div>
+                            <div class="col bg-amber text-dark wx-demo-h5 pt-1 px-2 wx-demo-line-height-sm font-weight-bold wx-inline-edit position-relative font-italic">2 FOUNTAINS &amp; A NAAN!!!</div>
+                        </div>
+                        <div class="wx-demo-p text-white mt-1 wx-inline-edit position-relative">get two fountain drinks and a cheese naan for only $5 bucks!!</div>
+                    </div>
+                </div>
+                
+                <!--
+                <div id="wxVideoMenu" class="position-absolute wx-neglect-col-spacing wx-video-menu-position" style="opacity: 0; visibility: initial;">
+                    <video width="427px" height="720px" autoplay="" muted="" oncanplay="this.play()" onloadedmetadata="this.muted = true" class="d-block" id="wxTossingVeg">
+                        <source src="./assets/2063d8e4-21a5-48ab-9959-1a8bb6ead135.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+        
+                <div class=" position-absolute wx-neglect-col-spacing wx-margin-into-size wx-demo-bg-dark wx-demo-smoothies-bg" id="wxDeliciousMenu" style="opacity: 0; visibility: initial;">
+                    <div class="wx-demo-mt-6 row no-gutters justify-content-md-center">
+                        <div class="col-4">
+                            <img src="./assets/a7450dc6-5b5f-4b06-aea1-dc43c2244035.png" class="img-fluid">
+                        </div>
+                    </div>
+        
+                    <div class="row no-gutters mt-4 justify-content-md-center">
+                        <div class="col-10">
+                            <img src="./assets/f53a3711-9c9f-4a05-a019-4bca7d3b2ce4.svg" class="img-fluid">
+                        </div>
+                    </div>
+        
+                    <div class="row no-gutters mb-5 text-center">
+                        <div class="col text-red wx-demo-smoothie-h2 wx-demo-smoothie-text">SMOOTHIES</div>
+                    </div>
+        
+                    <div class="mx-3">
+                        <div class="row no-gutters mb-3 bg-red text-white shadow">
+                            <div class="col-10 wx-demo-h4 pt-1 pl-3"><span class="text-white wx-inline-edit position-relative">ORANGE CREAMSICLE</span></div>
+                            <div class="col-2 wx-demo-h5 text-center pt-1 mt-1"><sup>$</sup><span class="text-white wx-inline-edit position-relative">4.19</span></div>
+                        </div>
+        
+                        <div class="row no-gutters mb-3 bg-red text-white shadow">
+                            <div class="col-10 wx-demo-h4 pt-1 pl-3"><span class="text-white wx-inline-edit position-relative">PEACH LEMONADE</span></div>
+                            <div class="col-2 wx-demo-h5 text-center pt-1 mt-1"><sup>$</sup><span class="text-white wx-inline-edit position-relative">4.19</span></div>
+                        </div>
+        
+                        <div class="row no-gutters mb-3 bg-red text-white shadow">
+                            <div class="col-10 wx-demo-h4 pt-1 pl-3"><span class="text-white wx-inline-edit position-relative">STRAWBERRY BANANA ORANGE</span></div>
+                            <div class="col-2 wx-demo-h5 text-center pt-1 mt-1"><sup>$</sup><span class="text-white wx-inline-edit position-relative">4.19</span></div>
+                        </div>
+        
+                        <div class="row no-gutters mb-3 bg-red text-white shadow">
+                            <div class="col-10 wx-demo-h4 pt-1 pl-3"><span class="text-white wx-inline-edit position-relative">MANGO STRAWBERRY CREME</span></div>
+                            <div class="col-2 wx-demo-h5 text-center pt-1 mt-1"><sup>$</sup><span class="text-white wx-inline-edit position-relative">4.19</span></div>
+                        </div>
+                    </div>
+        
+                    <div class="text-red wx-demo-smoothie-h1 mt-4 pl-5 wx-demo-line-height-xs">
+                        AVAILABLE<br>FOR A<br>LIMITED<br>TIME ONLY
+                    </div>
+        
+                    <div class="text-center text-red mt-4 ml-2">Smoothie product may not be exactly as shown</div>
+        
+                </div>
+        
+                <div class=" position-absolute w-100" id="wxSidesMenu" style="opacity: 0; visibility: initial;">
+                    <div class="wx-demo-h1 bg-white border border-dark wx-demo-border-width pl-2 wx-inline-edit position-relative">SIDES MENU</div>
+                    <div class="position-relative mx-1 mt-3">
+                        <div class="row no-gutters">
+                            <div class="col wx-demo-h4 wx-inline-edit position-relative">BEVERAGES</div>
+                            <div class="col-2 wx-demo-bg-green text-white wx-demo-h5 px-2 pt-1"><sup>$</sup> <span class="text-white wx-inline-edit position-relative">2.79</span></div>
+                        </div>
+                    </div>
+                    <div class="position-relative mx-1 mt-1">
+                        <div class="row no-gutters">
+                            <div class="col wx-demo-h4 wx-inline-edit position-relative">CHIPS / COOKIES / BAKLAVA</div>
+                            <div class="col-2 wx-demo-bg-green text-white wx-demo-h5 px-2 pt-1"><sup>$</sup> <span class="text-white wx-inline-edit position-relative">2.19</span></div>
+                        </div>
+                    </div>
+                    <div class="position-relative mx-1 mt-1">
+                        <div class="row no-gutters">
+                            <div class="col wx-demo-h4 wx-inline-edit position-relative">CHEESE NAAN</div>
+                            <div class="col-2 wx-demo-bg-green text-white wx-demo-h5 px-2 pt-1"><sup>$</sup> <span class="text-white wx-inline-edit position-relative">5.19</span></div>
+                        </div>
+                    </div>
+                    <div class="position-relative mx-1 mt-1">
+                        <div class="row no-gutters">
+                            <div class="col wx-demo-h4 wx-inline-edit position-relative">P.D. DONAIR SAUCE 16 OZ.</div>
+                            <div class="col-2 wx-demo-bg-green text-white wx-demo-h5 px-2 pt-1"><sup>$</sup> <span class="text-white wx-inline-edit position-relative">4.19</span></div>
+                        </div>
+                    </div>
+                    <div class="position-relative mx-1 mt-1">
+                        <div class="row no-gutters">
+                            <div class="col wx-demo-h4 wx-inline-edit position-relative">POTATO ROUNDS</div>
+                            <div class="col-2 wx-demo-bg-green text-white wx-demo-h5 px-2 pt-1"><sup>$</sup> <span class="text-white wx-inline-edit position-relative">5.19</span></div>
+                        </div>
+                    </div>
+                    <div class="position-relative mx-1 mt-1">
+                        <div class="row no-gutters">
+                            <div class="col wx-demo-h4 wx-inline-edit position-relative">P.D. POUTINE</div>
+                            <div class="col-2 wx-demo-bg-green text-white wx-demo-h5 px-2 pt-1"><sup>$</sup> <span class="text-white wx-inline-edit position-relative">11.49</span></div>
+                        </div>
+                    </div>
+                    <div class="position-relative mx-1 mt-1">
+                        <div class="row no-gutters">
+                            <div class="col wx-demo-h4 wx-inline-edit position-relative">MUFFIN</div>
+                            <div class="col-2 wx-demo-bg-green text-white wx-demo-h5 px-2 pt-1"><sup>$</sup> <span class="text-white wx-inline-edit position-relative">2.19</span></div>
+                        </div>
+                    </div>
+                    <div class="position-relative mx-1 mt-1">
+                        <div class="row no-gutters">
+                            <div class="col wx-demo-h4 wx-inline-edit position-relative">GLUTEN FREE PITA</div>
+                            <div class="col-2 wx-demo-bg-green text-white wx-demo-h5 px-2 pt-1"><sup>$</sup> <span class="text-white wx-inline-edit position-relative">2.00</span></div>
+                        </div>
+                    </div>
+                    <div class="position-relative mx-1 mt-1">
+                        <div class="row no-gutters">
+                            <div class="col wx-demo-h4 wx-inline-edit position-relative">MAKE IT A COMBO</div>
+                            <div class="col-2 wx-demo-bg-green text-white wx-demo-h5 px-2 pt-1"><sup>$</sup> <span class="text-white wx-inline-edit position-relative">4.00</span></div>
+                        </div>
+                    </div>
+                    <div class="position-relative mx-1 mt-1">
+                        <div class="row no-gutters">
+                            <div class="col wx-demo-h4 wx-inline-edit position-relative">DOUBLE MEAT</div>
+                            <div class="col-2 wx-demo-bg-green text-white wx-demo-h5 px-2 pt-1"><sup>$</sup> <span class="text-white wx-inline-edit position-relative">3.00</span></div>
+                        </div>
+                    </div>
+                    <div class="position-relative mx-1 mt-1">
+                        <div class="row no-gutters">
+                            <div class="col wx-demo-h4 wx-inline-edit position-relative">EXTRA CHEESE / VEG</div>
+                            <div class="col-2 wx-demo-bg-green text-white wx-demo-h5 px-2 pt-1"><sup>$</sup> <span class="text-white wx-inline-edit position-relative">1.00</span></div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class=" position-absolute wx-demo-bg-yellow wx-neglect-col-spacing wx-margin-into-size" id="wxMorningMenu" style="opacity: 0; visibility: initial;">
+                    <div class="row no-gutters justify-content-md-center wx-demo-mt-6">
+                        <div class="col-3">
+                            <img src="./assets/07b0d81a-1e8b-45f7-9b26-5cabdd935ccc.png" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="row no-gutters justify-content-md-center">
+                        <div class="col-8">
+                            <img src="./assets/956d1e20-1416-4753-a06a-dc4020ff7484.svg" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="mx-3 p-3 mat-elevation-z8 wx-demo-pd-rounded wx-demo-linear-gradient-yellow">
+                        
+                        <div class="row">
+                            <div class="col wx-demo-h4"><span class="wx-inline-edit position-relative">BEEF N' EGGER</span></div>
+                            <div class="col-auto wx-demo-h5"><sup>$</sup><span class="wx-inline-edit position-relative">4.19</span></div>
+                        </div>                    
+                        <div class="wx-demo-p wx-inline-edit position-relative">1 large 🍁 egg with red &amp; green peppers mixed in and grilled, topped with cheddar cheese, tomato and a slice of our delicious beef, all on a grilled english muffin</div>
+                        <div class="mt-2 px-2 py1 text-center wx-demo-bg-yellow wx-demo-md-stroke wx-demo-p-special wx-inline-edit position-relative font-italic">MAKE IT A COMBO WITH COFFEE AND A MUFFIN + $3</div>
+                        
+                        <div class="row mt-3">
+                            <div class="col wx-demo-h4"><span class="wx-inline-edit position-relative">LAMB N' EGGER</span></div>
+                            <div class="col-auto wx-demo-h5"><sup>$</sup><span class="wx-inline-edit position-relative">4.19</span></div>
+                        </div>                    
+                        <div class="wx-demo-p wx-inline-edit position-relative">1 large 🍁 egg with red &amp; green peppers mixed in and grilled, topped with cheddar cheese, tomato and a slice of our savoury lamb, all on a grilled english muffin</div>
+        
+                        <div class="row mt-3">
+                            <div class="col wx-demo-h4"><span class="wx-inline-edit position-relative">P.D. RISE &amp; SHINE</span></div>
+                            <div class="col-auto wx-demo-h5"><sup>$</sup><span class="wx-inline-edit position-relative">5.99</span></div>
+                        </div>                    
+                        <div class="wx-demo-p wx-inline-edit position-relative">1 large 🍁 An English muffin with freshly cracked eggs grilled with onions and green peppers, topped with tomatoes &amp; cheese, comes with your choice of a muffin and a coffee</div>
+                        <div class="mt-2 px-2 py1 text-center wx-demo-bg-yellow wx-demo-md-stroke wx-demo-p-special wx-inline-edit position-relative font-italic">COMES WITH A COFFEE &amp; YOUR CHOICE OF MUFFIN</div>
+        
+                        <div class="row mt-3">
+                            <div class="col wx-demo-h4"><span class="wx-inline-edit position-relative">P.D. BREAKFAST SKILLET</span></div>
+                            <div class="col-auto wx-demo-h5"><sup>$</sup><span class="wx-inline-edit position-relative">8.99</span></div>
+                        </div>                    
+                        <div class="wx-demo-p wx-inline-edit position-relative">Canadian Grade A Eggs grilled with green and red peppers, mushrooms, onions, layered on grilled potato rounds, topped with cheddar cheese and garlic mayo</div>
+                        <div class="mt-2 px-2 py1 text-center wx-demo-bg-yellow wx-demo-md-stroke wx-demo-p-special wx-inline-edit position-relative font-italic">MAKE IT A COMBO WITH COFFEE AND A MUFFIN + $3</div>
+                        
+                    </div> 
+                    <div class="wx-demo-h4 mt-4 text-center wx-demo-md-stroke">ONLY AT PARTICIPATING LOCATION</div>
+                </div>
+                
+                -->
+            </div>
+          </div>
+            
+
+        </div>
+
+
+        <!-- This has to added at the end of html so that it executes only after html render -->
+        <script>
+            let width = document.getElementById('bodyEle').getBoundingClientRect().width;
+            let scale = (width)/1280;
+
+            let designEle = document.getElementById('designEle');
+            designEle.style.transform = 'scale('+scale+')';
+            designEle.style['-webkit-transform'] = 'scale('+scale+')';
+            designEle.style['-moz-transform'] = 'scale('+scale+')';
+            designEle.style['-o-transform'] = 'scale('+scale+')';
+            designEle.style['-ms-zoom'] = scale;
+
+            var video = document.getElementById('video');
+            var source = document.createElement('source');
+
+            source.setAttribute('src', window.location.pathname+'assets/popcornvideobg.mp4');
+            source.setAttribute('type', 'video/mp4');
+
+            video.appendChild(source);
+
+            var source = document.createElement('source');
+
+            source.setAttribute('src', '/tmp/popcornvideobg.mp4');
+            source.setAttribute('type', 'video/mp4');
+
+            video.appendChild(source);
+
+            video.play();
+
+            // var location = window.location.pathname;
+            // var path = location.substring(0, location.lastIndexOf("/"));
+            // var directoryName = path.substring(path.lastIndexOf("/")+1);
+
+            console.log('Current directory: ', [window.location.pathname, window.location.pathname+'assets/popcornvideobg.mp4']);
+        </script>
+
+        <!-- Set up animation -->
+        <script src="./assets/f511f3b8-5c9d-4e18-90e4-592aa993e73b.js"></script>
+
+        <script src="js/neutralino.js"></script>
+        <!-- Your app's source files -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
